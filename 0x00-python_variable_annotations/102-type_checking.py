@@ -9,7 +9,7 @@ def zoom_array(lst: Tuple, factor: int = 2) -> Tuple:
     """creates multiple copies"""
     zoomed_in: Tuple = [
         item for item in lst
-        for i in range(factor)
+        for i in range(int(factor))
     ]
     return zoomed_in
 
