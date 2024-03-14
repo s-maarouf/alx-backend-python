@@ -2,12 +2,12 @@
 
 """type annonated module"""
 
-from typing import Tuple
+from typing import Tuple, List
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> Tuple:
     """creates multiple copies"""
-    zoomed_in: Tuple = [
+    zoomed_in: List = [
         item for item in lst
         for i in range(int(factor))
     ]
